@@ -93,7 +93,7 @@ var KTLogin = function() {
 			form,
 			{
 				fields: {
-					fullname: {
+					name: {
 						validators: {
 							notEmpty: {
 								message: 'Username is required'
@@ -114,10 +114,14 @@ var KTLogin = function() {
                         validators: {
                             notEmpty: {
                                 message: 'The password is required'
+                            },
+                            stringLength: {
+                                min: 8,
+                                message: 'The password need to be atleast 8 characters long'
                             }
                         }
                     },
-                    cpassword: {
+                    password_confirmation: {
                         validators: {
                             notEmpty: {
                                 message: 'The password confirmation is required'
@@ -127,13 +131,6 @@ var KTLogin = function() {
                                     return form.querySelector('[name="password"]').value;
                                 },
                                 message: 'The password and its confirm are not the same'
-                            }
-                        }
-                    },
-                    agree: {
-                        validators: {
-                            notEmpty: {
-                                message: 'You must accept the terms and conditions'
                             }
                         }
                     },
@@ -150,17 +147,7 @@ var KTLogin = function() {
 
             validation.validate().then(function(status) {
 		        if (status == 'Valid') {
-                    swal.fire({
-		                text: "All is cool! Now you submit this form",
-		                icon: "success",
-		                buttonsStyling: false,
-		                confirmButtonText: "Ok, got it!",
-                        customClass: {
-    						confirmButton: "btn font-weight-bold btn-light-primary"
-    					}
-		            }).then(function() {
-						KTUtil.scrollTop();
-					});
+                    $("#kt_login_signup_form").trigger('submit')
 				} else {
 					swal.fire({
 		                text: "Sorry, looks like there are some errors detected, please try again.",
