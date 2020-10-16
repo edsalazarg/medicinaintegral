@@ -96,44 +96,44 @@ var KTLogin = function() {
 					fullname: {
 						validators: {
 							notEmpty: {
-								message: 'Username is required'
+								message: 'El nombre de usuario es requerido'
 							}
 						}
 					},
 					email: {
                         validators: {
 							notEmpty: {
-								message: 'Email address is required'
+								message: 'El correo es un campo requerido'
 							},
                             emailAddress: {
-								message: 'The value is not a valid email address'
+								message: 'Dirección de correo incorrecta'
 							}
 						}
 					},
                     password: {
                         validators: {
                             notEmpty: {
-                                message: 'The password is required'
+                                message: 'La contraseña es un campo requerido'
                             }
                         }
                     },
                     cpassword: {
                         validators: {
                             notEmpty: {
-                                message: 'The password confirmation is required'
+                                message: 'Se requiere que confirmes la contraseña'
                             },
                             identical: {
                                 compare: function() {
                                     return form.querySelector('[name="password"]').value;
                                 },
-                                message: 'The password and its confirm are not the same'
+                                message: 'Las contraseñas no coinciden'
                             }
                         }
                     },
                     agree: {
                         validators: {
                             notEmpty: {
-                                message: 'You must accept the terms and conditions'
+                                message: 'Debes aceptar los terminos y condiciones'
                             }
                         }
                     },
@@ -150,17 +150,7 @@ var KTLogin = function() {
 
             validation.validate().then(function(status) {
 		        if (status == 'Valid') {
-                    swal.fire({
-		                text: "All is cool! Now you submit this form",
-		                icon: "success",
-		                buttonsStyling: false,
-		                confirmButtonText: "Ok, got it!",
-                        customClass: {
-    						confirmButton: "btn font-weight-bold btn-light-primary"
-    					}
-		            }).then(function() {
-						KTUtil.scrollTop();
-					});
+                    $('#kt_login_signup_form').trigger('submit')
 				} else {
 					swal.fire({
 		                text: "Sorry, looks like there are some errors detected, please try again.",
