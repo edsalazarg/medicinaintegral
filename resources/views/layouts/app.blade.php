@@ -30,13 +30,12 @@ License: You must have a valid license purchased only from themeforest(the above
             <!--end::Fonts-->
 
             <!--begin::Page Vendors Styles(used by this page)-->
-                <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
             <!--end::Page Vendors Styles-->
 
             <!--begin::Global Theme Styles(used by all pages)-->
-                <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-                <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
-                <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+                <link href="{{asset('/dist/assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
+                <link href="{{asset('/dist/assets/plugins/custom/prismjs/prismjs.bundle.css')}}" rel="stylesheet" type="text/css" />
+                <link href="{{asset('/dist/assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
             <!--end::Global Theme Styles-->
 
             <!--begin::Layout Themes(used by all pages)-->
@@ -87,7 +86,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                                 <!--begin::Logo-->
                                                     <a href="index.html">
-                                                        <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="max-h-30px" />
+                                                        <img alt="Logo" src="{{asset('/dist/assets/media/logos/logo-letter-2.png')}}" class="max-h-30px" />
                                                     </a>
                                                 <!--end::Logo-->
 
@@ -308,7 +307,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                                             <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
                                                         </span>
                                             </a>
-                                            <a href="#" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
+                                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -347,19 +349,15 @@ License: You must have a valid license purchased only from themeforest(the above
             <!--end::Global Config-->
 
             <!--begin::Global Theme Bundle(used by all pages)-->
-                <script src="assets/plugins/global/plugins.bundle.js"></script>
-                <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
-                <script src="assets/js/scripts.bundle.js"></script>
+                <script src="{{'/dist/assets/plugins/global/plugins.bundle.js'}}"></script>
+                <script src="{{'/dist/assets/plugins/custom/prismjs/prismjs.bundle.js'}}"></script>
+                <script src="{{'/dist/assets/js/scripts.bundle.js'}}"></script>
             <!--end::Global Theme Bundle-->
 
             <!--begin::Page Vendors(used by this page)-->
-                <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-                <script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM"></script>
-                <script src="assets/plugins/custom/gmaps/gmaps.js"></script>
             <!--end::Page Vendors-->
 
             <!--begin::Page Scripts(used by this page)-->
-                <script src="assets/js/pages/widgets.js"></script>
             <!--end::Page Scripts-->
 
         </body>
