@@ -230,55 +230,47 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 <!--end::Secondary-->
 
-                            </div>
-                        <!--end::Aside-->
+                                <!--begin::Wrapper-->
+                                    <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
 
-                        <!--begin::Wrapper-->
-                            <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
-
-                                <!--begin::Content-->
-                                    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-                                        <!--begin::Entry-->
-                                        <div class="d-flex flex-column-fluid">
-                                            <!--begin::Container-->
-                                            <div class="container">
-                                                @yield('content')
-                                            </div>
-                                            <!--end::Container-->
+                                        <!--begin::Content-->
+                                        <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                                            @yield('content')
                                         </div>
-                                        <!--end::Entry-->
-                                    </div>
-                                <!--end::Content-->
+                                        <!--end::Content-->
 
-                                <!--begin::Footer-->
-                                    <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+                                        <!--begin::Footer-->
+                                        <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
 
-                                        <!--begin::Container-->
+                                            <!--begin::Container-->
                                             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
 
                                                 <!--begin::Copyright-->
-                                                    <div class="text-dark order-2 order-md-1">
-                                                        <span class="text-muted font-weight-bold mr-2">2020©</span>
-                                                        <span class="text-dark-75">Equipo Medicina Integral</span>
-                                                    </div>
+                                                <div class="text-dark order-2 order-md-1">
+                                                    <span class="text-muted font-weight-bold mr-2">2020©</span>
+                                                    <span class="text-dark-75">Equipo Medicina Integral</span>
+                                                </div>
                                                 <!--end::Copyright-->
 
                                                 <!--begin::Nav-->
-                                                    <div class="nav nav-dark order-1 order-md-2">
-                                                        <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pr-3 pl-0">About</a>
-                                                        <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link px-3">Team</a>
-                                                        <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
-                                                    </div>
+                                                <div class="nav nav-dark order-1 order-md-2">
+                                                    <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pr-3 pl-0">About</a>
+                                                    <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link px-3">Team</a>
+                                                    <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+                                                </div>
                                                 <!--end::Nav-->
 
                                             </div>
-                                        <!--end::Container-->
+                                            <!--end::Container-->
+
+                                        </div>
+                                        <!--end::Footer-->
 
                                     </div>
-                                <!--end::Footer-->
+                                <!--end::Wrapper-->
 
                             </div>
-                        <!--end::Wrapper-->
+                        <!--end::Aside-->
 
                     </div>
                 <!--end::Page-->
@@ -364,9 +356,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <!--end::Global Theme Bundle-->
 
             <!--begin::Page Vendors(used by this page)-->
+                @yield('vendor_scripts')
             <!--end::Page Vendors-->
 
             <!--begin::Page Scripts(used by this page)-->
+                @yield('page_scripts')
             <!--end::Page Scripts-->
 
         </body>
