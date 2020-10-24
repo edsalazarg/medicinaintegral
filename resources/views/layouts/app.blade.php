@@ -54,8 +54,8 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div id="kt_header_mobile" class="header-mobile">
 
                         <!--begin::Logo-->
-                            <a href="index.html">
-                                <img alt="Logo" src="assets/media/logos/logo-letter-2.png" class="logo-default max-h-30px" />
+                            <a href="{{url('/')}}">
+                                <img alt="Logo" src="{{asset('images/udg.svg')}}" class="logo-default max-h-30px" />
                             </a>
                         <!--end::Logo-->
 
@@ -85,8 +85,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-5 py-lg-12">
 
                                                 <!--begin::Logo-->
-                                                    <a href="index.html">
-                                                        <img alt="Logo" src="{{asset('/dist/assets/media/logos/logo-letter-2.png')}}" class="max-h-30px" />
+                                                    <a href="{{url('/')}}">
+                                                        <img alt="Logo" src="{{asset('images/udg.svg')}}" class="max-h-30px" />
                                                     </a>
                                                 <!--end::Logo-->
 
@@ -101,7 +101,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                                         <!--begin::Item-->
                                                             <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
-                                                                <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+                                                                <a href="#" class="nav-link btn btn-icon btn-clean btn-lg active" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
                                                                     <span class="svg-icon svg-icon-xl">
 
                                                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group.svg-->
@@ -167,7 +167,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="aside-workspace scroll scroll-push my-2">
 
                                                     <!--begin::Tab Pane-->
-                                                        <div class="tab-pane fade" id="kt_aside_tab_2">
+                                                        <div class="tab-pane fade active show" id="kt_aside_tab_2">
 
                                                             <!--begin::Aside Menu-->
                                                                 <div class="aside-menu-wrapper flex-column-fluid px-10 py-5" id="kt_aside_menu_wrapper">
@@ -177,14 +177,20 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                                                             <!--begin::Menu Nav-->
                                                                                 <ul class="menu-nav">
-                                                                                    <li class="menu-section">
-                                                                                        <h4 class="menu-text">Layout</h4>
-                                                                                        <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
-                                                                                    </li>
                                                                                     <li class="menu-item" aria-haspopup="true">
-                                                                                        <a target="_blank" href="https://preview.keenthemes.com/metronic/demo3/builder.html" class="menu-link">
-                                                                                            <i class="menu-icon flaticon-cogwheel-1"></i>
-                                                                                            <span class="menu-text">Builder</span>
+                                                                                        <a href="index.html" class="menu-link">
+                                                                                            <span class="svg-icon menu-icon">
+                                                                                                <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
+                                                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                                                        <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                                                                                                        <path d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                                                                        <path d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z" fill="#000000" opacity="0.3"></path>
+                                                                                                    </g>
+                                                                                                </svg>
+                                                                                                <!--end::Svg Icon-->
+                                                                                            </span>
+                                                                                            <span class="menu-text">Dashboard</span>
                                                                                         </a>
                                                                                     </li>
                                                                                 </ul>
@@ -237,7 +243,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <!--begin::Copyright-->
                                                     <div class="text-dark order-2 order-md-1">
                                                         <span class="text-muted font-weight-bold mr-2">2020©</span>
-                                                        <a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">Keenthemes</a>
+                                                        <span class="text-dark-75">Equipo Pikachu</span>
                                                     </div>
                                                 <!--end::Copyright-->
 
@@ -268,8 +274,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                     <!--begin::Header-->
                         <div class="offcanvas-header d-flex align-items-center justify-content-between pb-5">
-                            <h3 class="font-weight-bold m-0">User Profile
-                                <small class="text-muted font-size-sm ml-2">12 messages</small></h3>
+                            <h3 class="font-weight-bold m-0">Usuario</h3>
                             <a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_user_close">
                                 <i class="ki ki-close icon-xs text-muted"></i>
                             </a>
@@ -281,33 +286,21 @@ License: You must have a valid license purchased only from themeforest(the above
 
                             <!--begin::Header-->
                                 <div class="d-flex align-items-center mt-5">
-                                    <div class="symbol symbol-100 mr-5">
-                                        <div class="symbol-label" style="background-image:url('assets/media/users/300_21.jpg')"></div>
-                                        <i class="symbol-badge bg-success"></i>
-                                    </div>
+{{--                                    <div class="symbol symbol-100 mr-5">--}}
+{{--                                        <div class="symbol-label" style="background-image:url({{asset('/dist/assets/media/users/300_21.jpg')}})"></div>--}}
+{{--                                    </div> aqui ira foto de perfil --}}
                                     <div class="d-flex flex-column">
-                                        <a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">James Jones</a>
-                                        <div class="text-muted mt-1">Application Developer</div>
+                                        <a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">{{Auth::user()->name}}</a>
+{{--                                        <div class="text-muted mt-1">Application Developer</div>--}} <!--Aqui va el rol-->
                                         <div class="navi mt-2">
-                                            <a href="#" class="navi-item">
-                                                        <span class="navi-link p-0 pb-2">
-                                                            <span class="navi-icon mr-1">
-                                                                <span class="svg-icon svg-icon-lg svg-icon-primary">
-                                                                    <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Mail-notification.svg-->
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                            <rect x="0" y="0" width="24" height="24" />
-                                                                            <path d="M21,12.0829584 C20.6747915,12.0283988 20.3407122,12 20,12 C16.6862915,12 14,14.6862915 14,18 C14,18.3407122 14.0283988,18.6747915 14.0829584,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,8 C3,6.8954305 3.8954305,6 5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,12.0829584 Z M18.1444251,7.83964668 L12,11.1481833 L5.85557487,7.83964668 C5.4908718,7.6432681 5.03602525,7.77972206 4.83964668,8.14442513 C4.6432681,8.5091282 4.77972206,8.96397475 5.14442513,9.16035332 L11.6444251,12.6603533 C11.8664074,12.7798822 12.1335926,12.7798822 12.3555749,12.6603533 L18.8555749,9.16035332 C19.2202779,8.96397475 19.3567319,8.5091282 19.1603533,8.14442513 C18.9639747,7.77972206 18.5091282,7.6432681 18.1444251,7.83964668 Z" fill="#000000" />
-                                                                            <circle fill="#000000" opacity="0.3" cx="19.5" cy="17.5" r="2.5" />
-                                                                        </g>
-                                                                    </svg>
-                                                                    <!--end::Svg Icon-->
-                                                                </span>
-                                                            </span>
-                                                            <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
-                                                        </span>
+                                            <span class="navi-item">
+                                                <span class="navi-link p-0 pb-2">
+                                                    <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
+                                                </span>
+                                            </span>
+                                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">
+                                                Cerrar sesión
                                             </a>
-                                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
