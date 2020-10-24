@@ -20,3 +20,5 @@ Route::get('/', function () {
 })->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('users', 'UserController');

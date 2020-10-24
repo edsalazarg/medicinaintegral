@@ -100,18 +100,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     <ul class="nav flex-column" role="tablist">
 
                                                         <!--begin::Item-->
-                                                            <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+                                                            <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Módulos">
                                                                 <a href="#" class="nav-link btn btn-icon btn-clean btn-lg active" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
                                                                     <span class="svg-icon svg-icon-xl">
 
                                                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group.svg-->
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                                    <polygon points="0 0 24 0 24 24 0 24" />
-                                                                                    <path d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-                                                                                    <path d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero" />
-                                                                                </g>
-                                                                            </svg>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                                <rect x="0" y="0" width="24" height="24"/>
+                                                                                <path d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                                <path d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z" fill="#000000" opacity="0.3"/>
+                                                                            </g>
+                                                                        </svg>
                                                                         <!--end::Svg Icon-->
 
                                                                     </span>
@@ -129,13 +129,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="aside-footer d-flex flex-column align-items-center flex-column-auto py-4 py-lg-10">
 
                                                 <!--begin::Aside Toggle-->
-                                                    <span class="aside-toggle btn btn-icon btn-primary btn-hover-primary shadow-sm" id="kt_aside_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Toggle Aside">
+                                                    <span class="aside-toggle btn btn-icon btn-primary btn-hover-primary shadow-sm" id="kt_aside_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Mostrar/Ocultar">
                                                         <i class="ki ki-bold-arrow-back icon-sm"></i>
                                                     </span>
                                                 <!--end::Aside Toggle-->
 
                                                 <!--begin::User-->
-                                                    <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                                    <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Perfil del Usuario">
                                                         <span class="symbol symbol-30 symbol-lg-40">
                                                             <span class="svg-icon svg-icon-xl">
 
@@ -177,8 +177,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                                                             <!--begin::Menu Nav-->
                                                                                 <ul class="menu-nav">
-                                                                                    <li class="menu-item" aria-haspopup="true">
-                                                                                        <a href="index.html" class="menu-link">
+                                                                                   <li class="menu-item" aria-haspopup="true">
+                                                                                         <a href="index.html" class="menu-link">
                                                                                             <span class="svg-icon menu-icon">
                                                                                                 <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
                                                                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -191,6 +191,22 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                                                 <!--end::Svg Icon-->
                                                                                             </span>
                                                                                             <span class="menu-text">Dashboard</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="menu-item" aria-haspopup="true">
+                                                                                        <a href="{{route("users.index")}}" class="menu-link">
+                                                                                            <span class="svg-icon menu-icon">
+                                                                                                <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
+                                                                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                                                        <polygon points="0 0 24 0 24 24 0 24"/>
+                                                                                                        <path d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+                                                                                                        <path d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                                                    </g>
+                                                                                                </svg>
+                                                                                                <!--end::Svg Icon-->
+                                                                                            </span>
+                                                                                            <span class="menu-text">Usuarios</span>
                                                                                         </a>
                                                                                     </li>
                                                                                 </ul>
@@ -243,7 +259,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <!--begin::Copyright-->
                                                     <div class="text-dark order-2 order-md-1">
                                                         <span class="text-muted font-weight-bold mr-2">2020©</span>
-                                                        <span class="text-dark-75">Equipo Pikachu</span>
+                                                        <span class="text-dark-75">Equipo Medicina Integral</span>
                                                     </div>
                                                 <!--end::Copyright-->
 
@@ -295,7 +311,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="navi mt-2">
                                             <span class="navi-item">
                                                 <span class="navi-link p-0 pb-2">
-                                                    <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
+                                                    <span class="navi-text text-muted text-hover-primary">{{Auth::user()->email}}</span>
                                                 </span>
                                             </span>
                                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">
