@@ -3026,7 +3026,10 @@ var KTWidgets = function () {
                             fontSize: "30px",
                             fontWeight: '700',
                             offsetY: 12,
-                            show: true
+                            show: true,
+                            formatter: function (val) {
+                                return val + '%';
+                            }
                         }
                     },
                     track: {
@@ -3608,8 +3611,8 @@ var KTWidgets = function () {
             return;
         }
 
-        var strokeColor = KTUtil.changeColor(KTApp.getSettings()['colors']['theme']['base']['danger'], 20);
-        var fillColor = KTUtil.changeColor(KTApp.getSettings()['colors']['theme']['base']['danger'], 10);
+        var strokeColor = KTUtil.changeColor(KTApp.getSettings()['colors']['theme']['base']['danger']);
+        var fillColor = KTUtil.changeColor(KTApp.getSettings()['colors']['theme']['base']['danger']);
 
         var options = {
             series: [{
